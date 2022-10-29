@@ -21,7 +21,17 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/about", (req, res) => {
+  res.render("about", {
+    aboutStartingContent: aboutContent
+  });
+});
 
+app.get("/contact", (req, res) => {
+  res.render("contact", {
+    contactStartingContent: contactContent
+  });
+});
 
 
 
